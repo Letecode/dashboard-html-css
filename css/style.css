@@ -1,0 +1,113 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+ul, ol {
+    list-style: none;
+    padding-inline-start: 0;
+}
+
+body, html {
+    height: 100%;
+    width: 100%;
+}
+
+.wrapper {
+    height: 100%;
+    display: flex;
+}
+
+
+.sidemenu {
+    height: 100%;
+    width: 170px;
+    border-right: 1px solid #747474;
+}
+
+.sidemenu.d-none {
+    display: none;
+}
+
+.sidemenu .navigation {
+    margin-top: 20px;
+}
+
+.sidemenu .navigation ul li {
+    padding: 10px 12px;
+    cursor: pointer;
+}
+.sidemenu .navigation ul li:hover {
+    background-color: #747474;
+}
+
+.sidemenu .navigation ul li:hover a {
+    color: #FFF;
+}
+
+.sidemenu .navigation ul li.active {
+    background-color: #747474;
+}
+
+.sidemenu .navigation ul li.active a {
+    color: #FFF;
+    display: block;
+}
+
+.brand img.logo {
+    width: 70px;
+}
+
+main {
+    width: 100%;
+}
+
+main .navbar {
+    height: 64px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 10px;
+    border-bottom: 1px solid #747474;
+}
+
+main .navbar .title {
+    display: flex;
+    align-items: center;
+}
+
+main .navbar h1 {
+    font-size: 18px;
+}
+
+.menu-toggle {
+    padding: 8px;
+    margin-right: 10px;
+}
+
+.menu-toggle:hover {
+    border: 1px solid #747474;
+    cursor: pointer;
+}
+
+.menu-toggle span {
+    width: 30px;
+    height: 3px;
+    border-radius: 5px;
+    display: block;
+    margin-bottom: 4px;
+    background-color: black;
+}
+
+/* Cacher le menu sur le mobile */
+@media (max-width:600px) {
+    .sidemenu {
+        display: none;
+    }
+}
